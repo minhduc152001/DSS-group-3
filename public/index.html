@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nhóm 3 - DSS</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h3 class="dss">Hệ Hỗ Trợ Ra Quyết Định</h3>
+    <h1>QUY HOẠCH - PHÂN LUỒNG XE BUÝT KHU VỰC HÀ NỘI</h1>
+    <div class="region">
+      <label for="region">Chọn Vùng:</label>
+      <select name="region" id="region">
+        <option value="">--VÙNG--</option>
+        <option value="Nội thành">Nội Thành</option>
+        <option value="Ngoại thành">Ngoại Thành</option>
+        <option value="Ngoại tỉnh">Ngoài Hà Nội</option>
+      </select>
+      <br /><br />
+    </div>
+
+    <div class="source">
+      <label for="source">Chọn Điểm Đầu:</label>
+      <select name="source" id="source">
+        <option value="">--KHU VỰC--</option>
+        <option value="Kim Mã" class="urban">Kim Mã</option>
+        <option value="Mỹ Đình" class="urban">Mỹ Đình</option>
+        <option value="Hải Dương" class="other">Hải Dương</option>
+        <option value="Hưng Yên" class="other">Hưng Yên</option>
+        <option value="Gia Lâm" class="suburban">Gia Lâm</option>
+        <option value="Sơn Tây" class="suburban">Sơn Tây</option>
+      </select>
+      <br /><br />
+    </div>
+
+    <div class="destination">
+      <label for="destination">Chọn Điểm Cuối:</label>
+      <select name="destination" id="destination">
+        <option value="">--KHU VỰC--</option>
+        <option value="Nhổn">Nhổn</option>
+        <option value="Nội Bài">Nội Bài</option>
+        <option value="Giáp Bát">Giáp Bát</option>
+        <option value="Yên Nghĩa">Yên Nghĩa</option>
+        <option value="Nước Ngầm">Nước Ngầm</option>
+      </select>
+      <br /><br />
+    </div>
+
+    <div id="check-urban">
+      <p>Đi qua từ 3 trường học và bệnh viện:</p>
+      <input type="radio" id="nhohon3" name="sotruong" value="nhohon3" />  
+      <label for="nhohon3">Không</label><br />
+      <input type="radio" id="lonhon3" name="sotruong" value="lonhon3" />
+      <label for="lonhon3">Có</label><br />
+
+      <p>Hay bị ùn tắc giao thông từ 6-8h hoặc 17-19h:</p>
+      <input type="radio" id="tacduong" name="giaothong" value="tacduong" />  
+      <label for="tacduong">Có</label><br />
+      <input type="radio" id="kotacduong" name="giaothong" value="kotacduong" />
+      <label for="kotacduong">Không</label><br />
+
+      <p>Mật độ dân số</p>
+      <input type="radio" id="matdocao1" name="matdo1" value="matdocao" />  
+      <label for="matdocao1">Đông</label><br />
+      <input type="radio" id="matdothap1" name="matdo1" value="matdothap" />  
+      <label for="matdothap1">Thưa</label><br />
+
+      <p>Khu vực nhiều công ty - chung cư</p>
+      <input type="radio" id="nhieucongty" name="congty" value="nhieucongty" />
+      <label for="nhieucongty">Có</label><br />
+      <input type="radio" id="itcongty" name="congty" value="itcongty" />  
+      <label for="itcongty">Không</label><br />
+
+      <p>Đi qua TTTM - KĐT</p>
+      <input type="radio" id="diquatttm" name="tttm" value="diquatttm" />
+      <label for="diquatttm">Có</label><br />
+      <input type="radio" id="kodiquatttm" name="tttm" value="kodiquatttm" />  
+      <label for="kodiquatttm">Không</label><br />
+
+      <p>Đi qua Chợ</p>
+      <input type="radio" id="diquacho" name="cho" value="diquacho" />
+      <label for="diquacho">Có</label><br />
+      <input type="radio" id="kodiquacho" name="cho" value="kodiquacho" />  
+      <label for="kodiquacho">Không</label><br />
+
+      <p>Gần nhà ga, sân bay, bến xe</p>
+      <input type="radio" id="nearStation" name="station" value="nearStation" />
+      <label for="nearStation">Có</label><br />
+      <input type="radio" id="noStation" name="station" value="noStation" />  
+      <label for="noStation">Không</label><br />
+    </div>
+
+    <div id="check-suburban">
+      <p>Cách nội thành từ 10-30km</p>
+      <input
+        type="radio"
+        id="xanoithanh"
+        name="cachnoithanh"
+        value="xanoithanh"
+      />
+        <label for="xanoithanh">Không</label><br />
+      <input
+        type="radio"
+        id="gannoithanh"
+        name="cachnoithanh"
+        value="gannoithanh"
+      />
+      <label for="gannoithanh">Có</label><br />
+
+      <p>Mật độ dân số</p>
+      <input type="radio" id="matdocao2" name="matdo2" value="matdocao" />  
+      <label for="matdocao2">Đông</label><br />
+      <input type="radio" id="matdothap2" name="matdo2" value="matdothap" />  
+      <label for="matdothap2">Thưa</label><br />
+
+      <p>Xung quanh khu vực có trường học</p>
+      <input
+        type="radio"
+        id="cotruonghoc"
+        name="truonghoc"
+        value="cotruonghoc"
+      />
+      <label for="cotruonghoc">Nhiều (lớn hơn 2)</label><br />
+      <input
+        type="radio"
+        id="kotruonghoc"
+        name="truonghoc"
+        value="kotruonghoc"
+      />
+      <label for="kotruonghoc">Ít</label><br />
+    </div>
+
+    <div class="search">
+      <input id="search" type="button" value="Tìm Kiếm" onclick="submit()" />
+    </div>
+    <div id="result"></div>
+    <div id="suggestion"></div>
+  </body>
+  <footer class="footer">
+    <p>Made by <b>Minh Đức - Lệ Quyên - Hoàng Cường</b></p>
+    🚌🚌🚌🚌🚌🚌
+  </footer>
+
+  <script src="./main.js"></script>
+</html>
